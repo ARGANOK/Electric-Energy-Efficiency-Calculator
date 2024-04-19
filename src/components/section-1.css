@@ -1,0 +1,57 @@
+.mainBody {
+    position: relative;
+    width: 35.52rem;
+    margin-right: 50px;
+    transition: all 1s ease-in-out;
+    background-color: white;
+}
+
+.imageSection {
+    box-shadow: 0 0 10px 5px aquamarine;
+    /* transition-delay: 1; */
+    
+}
+
+.mainBody:hover {
+    box-shadow: 10px 10px 50px 20px rgb(31, 0, 0);
+}
+.mainBody:hover .imageSection{
+    /* display: none; */
+    transform: rotateX(180deg);
+    opacity: 0;
+}
+
+
+.slider {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    color: white;
+    background-color: rgba(0,0,0, 0.58);
+    height: 100%;
+    width: 35.52rem;
+    /* transition: all 1s ease-in-out; */
+}
+
+.mainBody:hover  .slider {
+    display: flex;
+    will-change: opacity;
+    opacity: 1;
+    /* transition-delay: 0s; */
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url(../Fonts/university-1/University.otf);
+}
+
+#WelcomeNote {
+    font-family: "myFont";
+    max-width: 500px;
+    text-align: center;
+    line-height: 3rem;
+    text-shadow: 5px 0 50px black;
+}
