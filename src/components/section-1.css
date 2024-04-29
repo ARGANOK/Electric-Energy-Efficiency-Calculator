@@ -5,6 +5,9 @@
     transition: all 1s ease-in-out;
     background-color: white;
 }
+body{
+    background-image: url(../images/Moving-Background-2.gif);
+}
 
 .imageSection {
     box-shadow: 0 0 10px 5px aquamarine;
@@ -13,7 +16,7 @@
 }
 
 .mainBody:hover {
-    box-shadow: 10px 10px 50px 20px rgb(31, 0, 0);
+    box-shadow: 0px 0px 20px 5px rgb(31, 0, 0);
 }
 .mainBody:hover .imageSection{
     /* display: none; */
@@ -53,5 +56,5 @@
     max-width: 500px;
     text-align: center;
     line-height: 3rem;
-    text-shadow: 5px 0 50px black;
+    text-shadow: 0px 0 15px black;
 }

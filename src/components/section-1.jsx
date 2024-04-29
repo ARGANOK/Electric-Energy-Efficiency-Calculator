@@ -3,11 +3,15 @@ import { useState } from "react";
 import './section-1.css'
 import image from '../images/Section-1-image.png'
 import TypeWriterEffect from './typewriterEffect.jsx'
+import NavigationBar from './navBar.jsx';
+import AboutUs from "./Footer.jsx";
 
 
-export default function firstSection() {
-    return(
-        <div className=" flex flex-row-reverse justify-between  items-center ">
+export default function     firstSection() {
+    return(<div className=" bg-[url(../images/Moving-Background-2.gif)] ">
+        <NavigationBar  />
+
+        <div className=" flex flex-row-reverse justify-between  items-center mb-64">
             <div className="section-box">
                 <div className="mainBody">
                     <div className="imageSection">
@@ -23,6 +27,8 @@ export default function firstSection() {
             <div className=" ml-[3rem]">
         <TypeWriterEffect />
       </div>            
+        </div>
+        <AboutUs />
         </div>
     )
 }

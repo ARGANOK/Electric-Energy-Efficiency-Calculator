@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 
 import App from "./Calculator.jsx";
-import './Calculator.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../../images/Logo-2.png'
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
+  const[userName , setUserName]  = useState();
   return (
     <div className="min-h-screen flex items-center justify-center bg-lime-600 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
           <img className="mx-auto h-28 w-auto" src={Logo} alt="Workflow" />
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-white">Sign in to your account</h2>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-white overflow-y-hidden">Sign in to your account</h2>
         </div>
         <form className="mt-8 space-y-6" action="#" method="POST">
           <input type="hidden" name="remember" defaultValue="true" />
@@ -27,11 +29,11 @@ const LoginPage = () => {
               <label htmlFor="remember-me" className="ml-2 block text-sm text-white">Remember me</label>
             </div>
             <div className="text-sm">
-              <a href="#" className="font-medium text-blue-400 hover:text-blue-200">Forgot your password?</a>
+              <a href="#" className="font-medium text-white hover:text-gray-400">Forgot your password?</a>
             </div>
           </div>
           <div>
-            <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <Link to="/main" type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                 {/* <!-- Heroicon name: solid/lock-closed --> */}
                 <svg className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -40,7 +42,7 @@ const LoginPage = () => {
                 </svg>
               </span>
               Sign in
-            </button>
+            </Link>
           </div>
         </form>
       </div>

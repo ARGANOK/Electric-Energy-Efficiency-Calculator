@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function TypewriterEffect() {
   const [typedText, setTypedText] = useState('');
-  const textToType = "Welcome to SUSTAIN Energy service";
+  const textToType = "Welcome to SUSTAIN X Energy service";
   let index = 0;
   let typingInterval;
 
@@ -10,7 +10,7 @@ function TypewriterEffect() {
     function writingText() {
       if (index < textToType.length) {
         const char = textToType.charAt(index);
-        const specialCharacters = ['S', 'U', 'T', 'A', 'I', 'N'];
+        const specialCharacters = ['S', 'U', 'T', 'A', 'I', 'N' , 'X'];
         const color = specialCharacters.includes(char) ? 'aquamarine' : 'white';        setTypedText(prevText => (
           <span style={{ color }}>{prevText}{char}</span>
         ));
