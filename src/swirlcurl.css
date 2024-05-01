@@ -1,0 +1,28 @@
+.swirl-cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #3498db; /* Change border color as needed */
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out;
+    z-index: inherit;
+  }
+  
+  .swirl-cursor:hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    border-width: 3px;
+    animation: swirlAnimation 1s linear infinite;
+  }
+  
+  @keyframes swirlAnimation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }

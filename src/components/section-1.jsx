@@ -8,7 +8,7 @@ import AboutUs from "./Footer.jsx";
 
 
 export default function     firstSection() {
-    return(<div className=" bg-[url(../images/Moving-Background-2.gif)] ">
+    return(<div className=" ">
         <NavigationBar  />
 
         <div className=" flex flex-row-reverse justify-between  items-center mb-64">

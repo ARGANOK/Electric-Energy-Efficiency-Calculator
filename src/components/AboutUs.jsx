@@ -2,11 +2,13 @@ import React from 'react';
 import NavigationBar from './navBar';
 import './AboutUs.css'
 import BackgroundImage from '../images/vecteezy_ai-generated-ocean-under-the-moonlight-background_42193185.jpg'; // Import the background image
+import Footer from './Footer';
 
 
 const AboutUs = () => {
   return (
-    <div style={{ backgroundImage: `url(${BackgroundImage})`, backgroundSize:'cover'}}>
+    // <div style={{ backgroundImage: `url(${BackgroundImage})`, backgroundSize:'cover'}}>
+    <div className=''>
     <NavigationBar />
     <section className="text-gray-700 body-font">
       <div className="container px-5 py-24 mx-auto">
@@ -56,6 +58,7 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+    <Footer />
     </div>
   );
 }
