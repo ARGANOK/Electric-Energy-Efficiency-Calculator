@@ -2,6 +2,7 @@ const storedCalculations = [];
 const lastAdded = [];
 import { useState } from 'react';
 import { getApplianceData, updateApplianceData } from './Totalappliance.jsx';
+import { list } from 'postcss';
 
 export function addCalculation(appName, result, inputNo) {
     const [Sum , setSum] = useState(0);
@@ -11,6 +12,9 @@ export function addCalculation(appName, result, inputNo) {
  export function addLastAdded(name){
     console.log("last Added")
     lastAdded.push(name);
+ }
+ export function deleteAtaIndex(index){
+    storedCalculations.splice(index , 1);
  }
 export function removeLastCalculation() {
   const x = storedCalculations.pop(); // Remove the last calculation from storage

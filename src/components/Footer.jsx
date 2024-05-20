@@ -26,7 +26,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white mt-5">
+    <footer className="  text-white mt-5">
       <div className="container mx-auto py-8 px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
@@ -39,7 +39,7 @@ const Footer = () => {
             <a href="#" className="text-gray-300 hover:text-white">Contact</a>
           </div>
         </div>
-        <hr className="border-gray-700 my-4" />
+        {/* <hr className="border-gray-700 my-4" /> */}
         <div className="text-center md:text-left">
           <p className="text-sm">&copy; 2024 Company Name. All rights reserved.</p>
           <div className="flex justify-center md:justify-start space-x-4 mt-4">

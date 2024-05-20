@@ -1,6 +1,6 @@
 import './App.css'
 import React from "react";
-import Calculator from "./components/Calculator/Calculator"
+import Calculator from "./components/Calculator/Testing.jsx"
 import Login from "./components/Login.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FirstSection from './components/section-1';

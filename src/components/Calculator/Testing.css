@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    /* background-color: gray; */
+    overflow-x: hidden;
+    height: 100%;
+    /* background-image: url(../../images/vecteezy_ai-generated-ocean-under-the-moonlight-background_42193185.jpg); */
+    
+    background-size: cover;
+}
+#input-holder{
+    grid-template-columns: repeat(4,minmax(150px,1fr));
+    grid-template-rows: repeat(auto , 100%);
+    row-gap: 50px;
+}
